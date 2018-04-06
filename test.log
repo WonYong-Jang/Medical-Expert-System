@@ -1,0 +1,30 @@
+<object-stream>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>1</factId>
+  <objectToString>com.sample.model.DomainRules@4a2ca5bb</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Number 1 : 감기 [2]</activationId>
+  <rule>Number 1 : 감기</rule>
+  <declarations>symptomArr=[지속적인 기침, 호흡 곤란, 심한 두통, 식은땀과 오한이 동반되는 경우, 심한 피로감](2); ps=com.sample.model.Patient@4797011(2)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>2</factId>
+  <objectToString>com.sample.model.Patient@4797011</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Number 1 : 감기 [2]</activationId>
+  <rule>Number 1 : 감기</rule>
+  <declarations>symptomArr=[지속적인 기침, 호흡 곤란, 심한 두통, 식은땀과 오한이 동반되는 경우, 심한 피로감](2); ps=com.sample.model.Patient@4797011(2)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Number 1 : 감기 [2]</activationId>
+  <rule>Number 1 : 감기</rule>
+  <declarations>symptomArr=[지속적인 기침, 호흡 곤란, 심한 두통, 식은땀과 오한이 동반되는 경우, 심한 피로감](2); ps=com.sample.model.Patient@4797011(2)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+</object-stream>

@@ -1,0 +1,45 @@
+package com.sample
+
+import com.sample.model.DomainRules;
+import com.sample.model.Patient;
+import com.sample.PatientDiagnosis;
+//global java.util.ArrayList domain;
+/////////////////////Decision Rule///////////////////////////////////////////
+/*
+rule "NotMatching" salience -10
+	no-loop
+	when
+		ps : Patient(diagnosis.state == PatientDiagnosis.NODIAGNOSISED)
+	then
+		ps.diagnosis.setDiagnosis("일치하는 값이 없습니다.");
+		ps.diagnosis.setPrescription("일치하는 값이 없습니다.");
+end
+*/
+
+function boolean check(Patient patient, DomainRules domain, int num) {
+	int pLen = patient.symptomArr.size();
+	int dLen = domain.domainRules.get(num).size(); //이진 검색 이용
+	int count =0;
+	System.out.println("////////////"+pLen);
+	for(int i =0; i<dLen ; i++)
+	{
+		for(int j =0; j<pLen; j++)
+		{
+			if(domain.domainRules.get(num).get(i) == patient.symptomArr.get(j)) count++;
+		}
+	}
+	if(count == dLen) return true;
+	else return false;
+}
+
+
+rule "Number 1 : 감기"
+	//no-loop
+	when
+		
+		ps:Patient(symptomArr.contains("지속적인 기침"), symptomArr.contains("심한 두통"), symptomArr:symptomArr)
+	then
+		ps.diagnosis.setDiagnosis("Number 1 rule : 감기입니다."); //진단
+		ps.diagnosis.setPrescription("Number 1 rule : 항상제 [12-15] 까지 사용한다."); //처방
+end
+

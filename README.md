@@ -14,7 +14,7 @@
 ![1234567](https://user-images.githubusercontent.com/26623547/38420093-34964aa8-3992-11e8-8a3e-c00376b94ead.JPG)
 
 
-### Drools를 이용한 Nginx와 Ajax기반의 Medical Expert System 개발 (정보처리학회 춘계학술대회 / 2018-5-12)
+### Drools를 이용한 Nginx와 Ajax기반의 Medical Expert System 개발 (정보처리학회 춘계학술대회 / 2018-05-12)
 
 본 논문은 웹 기반의 Medical Expert System을 위하여, 오픈 소스 Drools 기반으로 Spring MVC 프레임워크와 Ajax를 이용하여 구현하였다. 클라이언트와 서버 간에 비동기적 통신으로 JSON 데이터를 주고받아 서버의 부담을 감소하였으며, 데이터베이스 접근은 기존의 복잡한 JDBC 단점을 보완하고자 Mybatis 프레임워크를 적용하여 RDBMS 의 성능을 향상시켰다. 또한, 웹 기반의 장점을 최대한 활용하여 사용자 수가 늘어남에 따라 서버 트래픽 문제를 해결하기 위하여 Nginx를 이용한 로드밸런싱 구조를 구축하여 서버의 가용성을 확대하였다. 본 Medical Expert 시스템의 처리 프로세스는 일반 사용자가 웹으로 접근하여 설문을 작성한 후 기본적인 진단 및 평가를 제공하여 주는 서비스를 제공한다.	
 

@@ -3,7 +3,8 @@
   <groupId>drools_project</groupId>
   <artifactId>drools_project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
+
   <dependencies>
   	<dependency>
   		<groupId>org.eclipse.jdt.core.compiler</groupId>
